@@ -1,0 +1,8 @@
+#!/bin/bash
+yum update -y
+yum install httpd24 php55 mysql-server -y
+service httpd restart
+service mysqld restart
+chkconfig httpd on
+chkconfig mysqld on
+aws s3 cp --recursive s3://BUCKET-NAME   /var/www/html/
