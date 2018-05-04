@@ -4,13 +4,13 @@ my bucket name is : s3://arjun-testing
 
 ### -  Put your complete webpages inside your bucket(s3://arjun-testing)
 
-### -  DO NOT make your bucket public.
+#### -  DO NOT make your bucket public.
 
-### -  Create an IAM role called 'deploy-from-s3'
+#### -  Create an IAM role called 'deploy-from-s3'
 
-### - Assign amazonS3readonly policy to 'deploy-from-s3'
+#### - Assign amazonS3readonly policy to 'deploy-from-s3'
 
-### - Create Ec2 instance with the following userdata.
+#### - Create Ec2 instance with the following userdata.
 
 ```
 #!/bin/bash
